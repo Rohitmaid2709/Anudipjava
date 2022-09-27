@@ -1,26 +1,22 @@
+public class Rectangle {
 
-public class Rectangle 
-{
-	int length;
-	int breadth;
+	int length,breadth;
 	
-	    Rectangle(int l, int b) 
-	    {
-		length =l;
+	public Rectangle(int l, int b) {
+		length = l;
 		breadth=b;
-	    }
+	}
 	
-	    void area() 
-	    {
-		System.out.println("Area of Rectangle="+length*breadth);
-	    } 
+	void printarea() {
+		System.out.println(length*breadth);
+	}
+	
+	void printperimeter() {
+		System.out.println(2*(length+breadth));
+	}
+public class LabTest{
 	public static void main(String[] args) {
 		Rectangle r= new Rectangle(2,2);
-		r.area();
-		
-	}
-}
-
-
-
-
+		r.printarea();
+		r.printperimeter();
+	}}}
